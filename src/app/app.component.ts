@@ -14,6 +14,9 @@ export class AppComponent {
   num1: number = 100;
   num2: number = 200;
   url = 'https://www.google.co.th/?hl=th';
+  ParentCount = 0;
+  fullname:string = 'Juthamas Saikaew';
+  languages = ['Visual C#','Vissual Basic','MEAN Stack','Angular'];
 
   showMessage(){
     return this.title;
@@ -40,5 +43,11 @@ export class AppComponent {
     
       console.log('Press enter : ', $event.target);
     
+  }
+  addParentCount(){
+    this.ParentCount = this.ParentCount + 1;
+  }
+  clearCount(value:number){
+    this.ParentCount = value;
   }
 }

@@ -1,4 +1,4 @@
-div{
+div.border-pink{
     padding-top: 60px;
     color:white;
     background-color: pink;
@@ -13,4 +13,7 @@ img{
 }
 .btn-padding{
     margin:20px
+}
+.mr-label{
+    margin-right: 20px;
 }
