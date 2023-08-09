@@ -99,9 +99,9 @@
 
   <!-- <input [ngModel]="fullname"/> -->
 
-  <div style="text-align: center;">
+  <div style="text-align: center;" class="container">
   <h1>แบบฟอร์มรับข้อมูลข่าวสาร</h1>
-  <form>
+  <form role="form" #customerform="ngForm" (submit)="onSubmit()">
     <div class="form-group row">
       <div class="col-md-6 col-lg-6" style="text-align: right;">
         <label class="mr-label">name : </label>

@@ -1,4 +1,11 @@
 import { Component } from '@angular/core';
+// import { FormsModule } from '@angular/forms';
+
+// @NgModule({
+//   imports: [
+//     FormsModule,
+//   ]
+// })
 
 @Component({
   selector: 'app-root',
@@ -17,6 +24,9 @@ export class AppComponent {
   ParentCount = 0;
   fullname:string = 'Juthamas Saikaew';
   languages = ['Visual C#','Vissual Basic','MEAN Stack','Angular'];
+  // customer:Customer;
+  // str:string;
+
 
   showMessage(){
     return this.title;
@@ -50,4 +60,12 @@ export class AppComponent {
   clearCount(value:number){
     this.ParentCount = value;
   }
+  onSubmit(){
+    // this.str = "ค่าจากแบบฟอร์ม : " + JSON.stringify(this.customer);
+    // window.alert(this.str);
+  }
+}
+class Customer{
+  // FullName:string;
+  // Email:string;
 }
